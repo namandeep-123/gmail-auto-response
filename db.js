@@ -10,7 +10,7 @@ try {
 }
 
 const db = {
-  user: data?.users ?? [],
+  users: data?.users ?? [],
 };
 
 db.save = () => {
