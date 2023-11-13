@@ -1,8 +1,9 @@
-import db from "./mockdb.js";
-import oauth2 from "./api/oauth2/index.js";
-import gmail from "./api/gmail/index.js";
+import db from "./db.js";
+import oauth2 from "./gmailOauth.js";
+import gmail from "./mail.js";
 
 const sendUserReplies = async (user) => {
+  console.log(user);
   const refreshResponse = await oauth2.refreshAccessToken(
     user.tokens.accessToken,
     user.tokens.refreshToken

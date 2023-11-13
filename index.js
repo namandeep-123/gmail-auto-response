@@ -8,6 +8,8 @@ import db from "./db.js";
 //apis
 import oauth2 from "./gmailOauth.js";
 
+import("./autoResponse.js");
+
 const app = express();
 const port = process.env.PORT;
 
